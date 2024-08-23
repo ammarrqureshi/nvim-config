@@ -24,6 +24,12 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     -- import/override with your plugins
     { import = "plugins" },
+    {
+      "barrett-ruth/live-server.nvim",
+      build = "pnpm add -g live-server",
+      cmd = { "LiveServerStart", "LiveServerStop" },
+      config = true,
+    },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -34,7 +40,8 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "catppuccin", "habamax" } },
+
+  install = { colorscheme = { "cattpuccin" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update

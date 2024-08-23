@@ -1,12 +1,10 @@
 return {
-  -- add gruvbox
-  { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+  { "olivercederborg/poimandres.nvim" },
 
-  -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nightfly",
+      colorscheme = "poimandres",
     },
   },
 }
