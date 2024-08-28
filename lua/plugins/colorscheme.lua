@@ -1,14 +1,10 @@
 return {
-  {
-    "shatur/neovim-ayu",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000,
-  },
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "ayu-mirage",
+      colorscheme = "moonfly",
     },
   },
 }
