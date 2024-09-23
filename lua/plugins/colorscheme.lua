@@ -1,10 +1,10 @@
 return {
-  { "rebelot/kanagawa.nvim", lazy = false, priority = 1000 },
+  { "Shatur/neovim-ayu", lazy = false, priority = 1000 },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "ayu-mirage",
     },
   },
 }
