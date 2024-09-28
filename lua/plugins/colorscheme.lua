@@ -1,10 +1,12 @@
+--Lua:
+vim.g.material_style = "deep ocean"
 return {
-  { "Shatur/neovim-ayu", lazy = false, priority = 1000 },
+  { "marko-cerovac/material.nvim", lazy = false, priority = 1000 },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "ayu-mirage",
+      colorscheme = "material",
     },
   },
 }
